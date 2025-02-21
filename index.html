@@ -28,15 +28,15 @@ https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 	
-<head> 
-	<title>Hello World</title>  
-]	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" href="w3.css">
-	<link rel="stylesheet" href="w3-colors-flat.css">
-</head> 
+ <head> 
+      <title>Hello World</title>  
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="stylesheet" href="w3.css">
+      <link rel="stylesheet" href="w3-colors-flat.css">
+   </head> 
 
-<script>
+
 <script>
         var allergy_count = 0;
         var cold_count = 0;
@@ -65,13 +65,6 @@ function resultsPercent () {
 }	
   </script>
 
-<!-- This adds a point to every answer coded as yes-->
-
-
-</script>	
-
-
-<!-- THIS STYLE CODE HELPS MAKE YOUR APP LOOK GOOD. PROBABLY DONT MESS WITH IT -->
 <style>	
 .body {
      margin: 0em;
@@ -92,15 +85,35 @@ function resultsPercent () {
     left: 0vw;
     z-index: 1;
 }
+
+<style>	
+.body {
+     margin: 0em;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    overflow-y: auto;
+    z-index: 0;
+    background-color: hsl(0,0%,100%);
+}
+
+  .page:target {
+    left: 0vw;
+    z-index: 1;
+}
+
 </style>
 
 <body>
-	
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Cold or Allergies?</h1>
 </div>
-	
-<div id="content" class="w3-container">
+ <div id="content" class="w3-container">
 	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
@@ -213,7 +226,7 @@ function resultsPercent () {
 <!-- I added the percentage of each allergy and cold. -->
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
-</footer>	
+</footer>
 
 </body>
 </html>
