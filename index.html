@@ -38,30 +38,30 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var heart_count = 0;
+        var panic_count = 0;
 
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-		alert(allergy_count);
+        function heartAdd(){
+            heart_count = heart_count + 1;
+		alert(heart_count);
 
         }
 
-<!-- I added variables to account for allergies. -->
+<!-- I added variables to account for a heart attack. -->
 
-	function coldAdd(){
-        cold_count = cold_count + 1;
-	alert(cold_count)
+	function panicAdd(){
+        cold_count = panic_count + 1;
+	alert(panic_count)
         }
 
-<!-- I added variables to account for cold. -->
+<!-- I added variables to account for a panic attack. -->
 
 function resultsPercent () {
 	var resultText = document.getElementById("results");
-	var allergyPercent = (allergy_count/6)*100;
-	var coldPercent = (cold_count/6)*100; 
-	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+	var heartPercent = (heart_count/6)*100;
+	var panicPercent = (panic_count/6)*100; 
+	resultText.innerHTML = "Probability it is a heart attack =" + heartPercent + "<br> Probability it is a panic attack =" + panicPercent;
 }	
   </script>
 
@@ -129,9 +129,9 @@ function resultsPercent () {
 	
     	<div id="content" class="w3-container">
         <p>Are your eyes watery or itchy?</p> 
-	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#two"  onclick="heartAdd();" class="w3-btn w3-black"> Yes</a>
 	</div>
-        <a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+        <a href="#two"  onclick="panicAdd();" class="w3-btn w3-black">No</a>
 <!-- This is JAVA script to trigger the button to run the action -->
 <!-- I created the yes and no buttons -->
 	
@@ -144,9 +144,9 @@ function resultsPercent () {
 	
 	<div id="content" class="w3-container">
 	<p>Do you have a fever? </p>
-	<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#three" onclick="panicAdd();" class="w3-btn w3-black"> Yes</a>
 </div>
-	<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> No</a>
+	<a href="#three" onclick="heartAdd();" class="w3-btn w3-black"> No</a>
 <!-- I created the yes and no buttons -->
 <!-- This is JAVA script to trigger the button to run the action -->	
 </div>	
@@ -159,9 +159,9 @@ function resultsPercent () {
 	
 	<div id="content" class="w3-container">
 	<p>Do you have a sore throat? </p>
-	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#four"  onclick="panicAdd();" class="w3-btn w3-black"> Yes</a>
 	</div>
-        <a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+        <a href="#four"  onclick="heartAdd();" class="w3-btn w3-black">No</a>
 <!-- I created the yes and no buttons -->
 <!-- This is JAVA script to trigger the button to run the action -->
 <!-- I changed the code to click to the next page -->	
@@ -175,9 +175,9 @@ function resultsPercent () {
 	
 	<div id="content" class="w3-container">
 	<p>Are your symptoms seasonal or chronic? </p>
-	<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#five"  onclick="heartAdd();" class="w3-btn w3-black"> Yes</a>
 	</div>
-        <a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+        <a href="#five"  onclick="panicAdd();" class="w3-btn w3-black">No</a>
 
 <!-- I created the yes and no buttons -->
 <!-- This is JAVA script to trigger the button to run the action -->
@@ -190,9 +190,9 @@ function resultsPercent () {
 	
 	<div id="content" class="w3-container">
 	<p>Are you experiencing body aches? </p>
-	<a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#six"  onclick="panicAdd();" class="w3-btn w3-black"> Yes</a>
 	</div>
-        <a href="#six"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+        <a href="#six"  onclick="heartAdd();" class="w3-btn w3-black">No</a>
 <!-- I added a question to diagnose cold -->
 <!-- I created the yes and no buttons -->
 <!-- This is JAVA script to trigger the button to run the action -->
@@ -206,9 +206,9 @@ function resultsPercent () {
 	
 	<div id="content" class="w3-container">
 	<p>Do you have a dry cough? </p>
-	<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#seven"  onclick="heartAdd();" class="w3-btn w3-black"> Yes</a>
 	</div>
-        <a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+        <a href="#seven"  onclick="panicAdd();" class="w3-btn w3-black">No</a>
 <!-- I added a question to diagnose allergy -->
 <!-- I created the yes and no buttons -->
 <!-- This is JAVA script to trigger the button to run the action -->
